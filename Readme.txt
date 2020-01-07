@@ -1,6 +1,1 @@
-Thanks for downloading this theme!
-
-Theme Name: Avilon
-Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
-Author: BootstrapMade.com
-Author URL: https://bootstrapmade.com
+This landing page was made by modifying the theme Avilon from BootstrapMade.com.
