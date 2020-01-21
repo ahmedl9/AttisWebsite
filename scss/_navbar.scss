@@ -18,10 +18,10 @@
         padding: 0.75rem 0;
         &:hover,
         &:active {
-          color: $primary;
+          color: $blue;
         }
         &.active {
-          color: $primary !important;
+          color: $blue !important;
         }
       }
     }
