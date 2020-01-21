@@ -2256,13 +2256,13 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
+  background-color: #212529;
   border-color: #f4623a;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
+  background-color: #1b57e4;
   border-color: #ee3e0d;
 }
 
@@ -3931,7 +3931,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #f4623a;
+  background-color: #1b57e4;
 }
 
 .nav-fill .nav-item {
@@ -9564,7 +9564,7 @@ html {
 hr.divider {
   max-width: 3.25rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color: #1b57e4;
 }
 
 hr.light {
