@@ -1,5 +1,65 @@
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
+.outer-padding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+.wrapper {
+    color: #485460;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content {
+    position: relative;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.form {
+    position: relative;
+    padding: 35px 50px;
+    z-index: 1;
+    max-width: 390px;
+    transition-delay: 2s;
+    transition: all 0.8s;
+    opacity: 1;
+    background-color: white;
+    border-radius: 14px;
+    margin-top: 30px;
+}
+.form-input {
+    position: relative;
+    width: 100%;
+    padding: 15px 16px;
+    box-sizing: border-box;
+    margin: 13px 0 13px 0;
+    border: 1px solid #d2dae2;
+    border-radius: 9px;
+}
+.form-button {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    margin: 8px 0;
+    padding: 15px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.5s;
+    font-weight: 500;
+}
+.form-input-or {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9px;
+}
 .mt-5 {
 	margin-top: 5px;
 }
