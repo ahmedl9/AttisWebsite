@@ -90,8 +90,8 @@
     <div class="outer-padding">
       <div class="wrapper">
               <div class="content" id="login" style="display: block;">
-                  <h1 class="title" style="color:black;">Join Our Waitlist</h1>
-                  <div class="form">
+                  <h1 class="title" style="color:black;">Join Our Waitlist!</h1>
+                  <div class="form" method="POST" action="http://localhost:3000/api/users">
                       <form onsubmit="return false;" _lpchecked="1">
                           <div>
                               <input type="first_name" class="form-input login first_name" placeholder="First Name">
@@ -103,7 +103,7 @@
                           <div>
                               <input type="email" class="form-input login email" placeholder="Email">
                           </div>
-                          <button class="form-button login colored">Submit
+                          <button class="form-button login colored" type="submit">Submit
                               <div class="loadingAnimation hidden">
                                   <div class="layer"></div>
                                   <div class="loader"></div>
