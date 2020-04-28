@@ -124,6 +124,19 @@
                           /*$.post(url, obj, function(data, status){
                             console.log('${data} and status is ${status}');
                           }, 'json') */
+                          request.onload = () => {
+                              let responseObject = null;
+
+                              try {
+                                  responseObject = JSON.parse(request.responseText);
+                              } catch (e) {
+                                  console.error('Could not parse JSON!');
+                              }
+
+                              if (responseObject) {
+                                  handleResponse(responseObject);
+                              }
+                          };
                           request.open('post', 'http://localhost:3000/api/users');
                           request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                           request.send(obj);
