@@ -123,7 +123,7 @@
                           console.log("button clicked");
                           $.post(url, obj, function(data, status){
                             console.log('${data} and status is ${status}');
-                          })
+                          }, 'json')
                         })
                         /*
                         form.submit.addEventListener('click', () => {
