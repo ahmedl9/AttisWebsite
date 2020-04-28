@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
-
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="utf-8">
 
     <!--====== Title ======-->
@@ -108,6 +108,17 @@
                       </form>
                   </div>
                       <script>
+
+                        const request = new XMLHttpRequest();
+
+                        const url = 'http://localhost:3000/api/users';
+                        var obj = {first_name: '${form.first_name.value}', last_name: '${form.last_name.value}', email: '${form.email.value}', 	"loan_amount": 5, "date": "2016-05-18T16:00:00Z", "was_referred": "false", "referral_count": 0};
+                        $('.btn-submit').click(function() {
+                          $.post(url, obj, function(data, status){
+                            console.log('${data} and status is ${status}');
+                          })
+                        })
+                        /*
                         const form = {
                             first_name: document.getElementById('first_name'),
                             last_name: document.getElementById('last_name'),
@@ -154,7 +165,7 @@
 
                                 form.messages.style.display = "block";
                             }
-                        }
+                        } */
                     </script>
 
               </div>
