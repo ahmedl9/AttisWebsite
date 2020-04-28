@@ -121,9 +121,13 @@
                         var obj = {first_name: '${form.first_name.value}', last_name: '${form.last_name.value}', email: '${form.email.value}', 	"loan_amount": 5, "date": "2016-05-18T16:00:00Z", "was_referred": "false", "referral_count": 0};
                         form.submit.addEventListener('click', () => {
                           console.log("button clicked");
-                          $.post(url, obj, function(data, status){
+                          /*$.post(url, obj, function(data, status){
                             console.log('${data} and status is ${status}');
-                          }, 'json')
+                          }, 'json') */
+                          request.open('post', 'http://localhost:3000/api/users');
+                          request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                          request.send(obj);
+
                         })
                         /*
                         form.submit.addEventListener('click', () => {
