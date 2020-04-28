@@ -131,7 +131,7 @@
                                 }
                             };
 
-                            var obj = {first_name: ${form.first_name.value}, last_name: ${form.last_name.value}, email: ${form.email.value}}
+                            var obj = {first_name: '${form.first_name.value}', 'last_name: ${form.last_name.value}', email: '${form.email.value}'};
                             const requestData = JSON.stringify(obj);
                             request.open('post', 'http://localhost:3000/api/users');
                             request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
