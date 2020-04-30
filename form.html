@@ -161,31 +161,21 @@
                                 }
                             };
 
-                            var obj = {first_name: '${form.first_name.value}', last_name: '${form.last_name.value}', email: '${form.email.value}', 	"loan_amount": 5, "date": "2016-05-18T16:00:00Z", "was_referred": "false", "referral_count": 0};
+                            var obj = {first_name: document.getElementById("first_name"),
+                                      last_name: document.getElementById("last_name"),
+                                      email: document.getElementById("email"),
+                                      "loan_amount": 5,
+                                      "date": "2016-05-18T16:00:00Z",
+                                      "was_referred": "false",
+                                      "referral_count": 0};
                             const requestData = JSON.stringify(obj);
                             request.open('post', 'http://localhost:3000/api/users');
-                            request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            request.setRequestHeader('Content-type', 'application/json;charset=UTF-8');
                             console.log(obj);
-                            request.send(JSON.stringify({first_name: "ahmed"}));
+                            request.send(JSON.stringify(obj));
                         });
 
-                        function handleResponse (responseObject) {
-                            if (responseObject.ok) {
-                                location.href = 'dashboard.html';
-                            } else {
-                                while (form.messages.firstChild) {
-                                    form.messages.removeChild(form.messages.firstChild);
-                                }
 
-                                responseObject.messages.forEach((message) => {
-                                    const li = document.createElement('li');
-                                    li.textContent = message;
-                                    form.messages.appendChild(li);
-                                });
-
-                                form.messages.style.display = "block";
-                            }
-                        }
                     </script>
 
               </div>
