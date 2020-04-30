@@ -110,9 +110,9 @@
                       <script>
 
                         const form = {
-                            first_name: document.getElementById('first_name'),
-                            last_name: document.getElementById('last_name'),
-                            email: document.getElementById('email'),
+                            first_name: document.getElementById('first_name').val,
+                            last_name: document.getElementById('last_name').val,
+                            email: document.getElementById('email').val,
                             submit: document.getElementById('btn-submit'),
                         };
                         /*
@@ -161,9 +161,9 @@
                                 }
                             };
 
-                            var obj = {first_name: document.getElementById("first_name"),
-                                      last_name: document.getElementById("last_name"),
-                                      email: document.getElementById("email"),
+                            var obj = {first_name: document.getElementById("first_name").val,
+                                      last_name: document.getElementById("last_name").val,
+                                      email: document.getElementById("email").val,
                                       "loan_amount": 5,
                                       "date": "2016-05-18T16:00:00Z",
                                       "was_referred": "false",
