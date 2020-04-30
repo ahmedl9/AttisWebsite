@@ -90,23 +90,8 @@
     <div class="outer-padding">
       <div class="wrapper">
               <div class="content" id="login" style="display: block;">
-                  <h1 class="title" style="color:black;">Join Our Waitlist!</h1>
-                  <div id = "waitlist_form" class="form" method="post" action="http://localhost:3000/api/users">
-                      <form onsubmit="return false;" _lpchecked="1">
-                          <div>
-                              <input id="first_name" class="form-input login first_name" placeholder="First Name">
-                          </div>
-                          <div>
-                              <input id="last_name" class="form-input login last_name" placeholder="Last Name">
-                          </div>
-
-                          <div>
-                              <input id="email" class="form-input login email" placeholder="Email">
-                          </div>
-                          <button id="btn-submit" class="form-button login colored" type="submit">Submit
-                          </button>
-                      </form>
-                  </div>
+                  <h1 class="title" style="color:black;">Thanks for applying!</h1>
+                  <h2 class="title" style="color:black;">We'll try to be in contact soon!</h2>
                       <script>
 
                         const form = {
@@ -173,7 +158,7 @@
                             request.setRequestHeader('Content-type', 'application/json;charset=UTF-8');
                             console.log(obj);
                             request.send(JSON.stringify(obj));
-                            window.location.replace("http://www.attisdebt.com/submission.html");
+                            window.location.replace("http://www.attisdebt.com");
                         });
 
 
