@@ -91,7 +91,7 @@
       <div class="wrapper">
               <div class="content" id="login" style="display: block;">
                   <h1 class="title" style="color:black;">Join Our Waitlist!</h1>
-                  <div class="form" method="post" action="http://localhost:3000/api/users">
+                  <div id = "waitlist_form" class="form" method="post" action="http://localhost:3000/api/users">
                       <form onsubmit="return false;" _lpchecked="1">
                           <div>
                               <input id="first_name" class="form-input login first_name" placeholder="First Name">
@@ -161,9 +161,9 @@
                                 }
                             };
 
-                            var obj = {first_name: document.getElementById("first_name"),
-                                      last_name: document.getElementById("last_name"),
-                                      email: document.getElementById("email"),
+                            var obj = {first_name: document.getElementById("waitlist_form").item(0),
+                                      last_name: document.getElementById("waitlist_form").item(1),
+                                      email: document.getElementById("waitlist_form").item(2),
                                       "loan_amount": 5,
                                       "date": "2016-05-18T16:00:00Z",
                                       "was_referred": "false",
