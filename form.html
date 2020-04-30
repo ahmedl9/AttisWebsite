@@ -151,13 +151,13 @@
                                 let responseObject = null;
 
                                 try {
-                                    responseObject = JSON.parse(request.responseText);
+                                    responseObject = request.responseText;
                                 } catch (e) {
                                     console.error('Could not parse JSON!');
                                 }
 
                                 if (responseObject) {
-                                    handleResponse(responseObject);
+                                    console.log(responseObject);
                                 }
                             };
 
