@@ -91,7 +91,7 @@
       <div class="wrapper">
               <div class="content" id="login" style="display: block;">
                   <h1 class="title" style="color:black;">Join Our Waitlist!</h1>
-                  <div id = "waitlist_form" class="form" method="post" action="http://localhost:3000/api/users">
+                  <!--<div id = "waitlist_form" class="form" method="post" action="http://localhost:3000/api/users">
                       <form onsubmit="return false;" _lpchecked="1">
                           <div>
                               <input id="first_name" class="form-input login first_name" placeholder="First Name">
@@ -107,6 +107,8 @@
                           </button>
                       </form>
                   </div>
+                -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdgGx7dzToY_6pT_t0Z8p0B4fjvOAzrYD7fPVBOrgc0GYRyKA/viewform?embedded=true" width="640" height="582" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                       <script>
 
                         const form = {
@@ -169,7 +171,7 @@
                                       "was_referred": "false",
                                       "referral_count": 0};
                             const requestData = JSON.stringify(obj);
-                            request.open('post', 'http://localhost:3000/api/users');
+                            request.open('post', 'https://immense-woodland-32982.herokuapp.com/');
                             request.setRequestHeader('Content-type', 'application/json;charset=UTF-8');
                             console.log(obj);
                             request.send(JSON.stringify(obj));
